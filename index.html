@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function(){
+
+    $(".pic1").animate({
+     right:"0px",
+    
+    },4000,function(){
+      $("pic1").css("background-color","/storage/emulated/0/pictures/red.jpeg");
+    });
+    $(".pic1").animate({
+      bottom:"0px",
+    },3000,function(){
+        $(".pic1").css("transform","scalex(1)");
+    });
+     $(".pic1").animate({
+      left:"0px",
+     
+    },4000);
+     $(".pic1").animate({
+     top:"0px",
+      
+    },3000);
+ });
+
+</script>
+</head>
+<body>
+  <style>
+.bt{
+  background-image:url(blue2.jpg);
+  height:2000px;;
+  background-size:cover;
+}
+ .pic1{
+   
+   position:absolute;
+    height: 100px;
+    transform: scaleX(-1);
+ }
+
+  </style>
+<div class="bt">
+  <img src="fish.gif" alt="" class="pic1" height="300px">
+ 
+
+</div>
+</body>
+</html>
